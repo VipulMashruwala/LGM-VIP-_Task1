@@ -1,0 +1,559 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+/*  Nav Bar CSS */
+
+#navbar{
+    margin-left: 200px;
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    padding-top:20px;
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    padding-top: 10px;
+    padding: 15px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color:rgb(255, 227, 103);
+}
+
+.nav-items{
+    float: right;
+}
+
+#home{
+    display:flex;
+    height:566px;
+    flex-direction:column; 
+    justify-content: center;
+}
+
+#header{
+    margin-right: 200px;
+}
+
+#home::before{
+    content: "";
+    background:url('background.jpg') no-repeat center center/cover;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.home-section{
+    margin-left: 200px;
+}
+
+.btn-learnmore{
+    height: 31px;
+    width: 115px;
+    font-size: 15px;
+    background-color: purple;
+    border: none;
+    color: white;
+}
+.btn-learnmore:hover{
+    background-color: rgb(255, 227, 103);
+    color: purple;
+    cursor:pointer;
+}
+
+#logo{
+    color: white;
+    display: inline;
+    font-size:25px;
+}
+
+.heading{
+    width: 32rem;
+    color: white;
+    font-size: 45px;
+}
+.header-text{
+    color:gray;
+}
+
+/*  Welcome to Zippy CSS */
+
+#welcome-zippy{
+    margin-left: 200px;
+    margin-right: 200px;  
+}
+
+.welcome-header{
+    text-align: center;
+    font-weight: bold;
+}
+
+.welcome-content{
+    color: gray;
+}
+
+.row-data{
+    text-align: center;
+}
+
+.icon-title{
+    color:purple;
+    font-weight: bold;
+}
+
+.row-center{
+    text-align: center;
+}
+
+.jst{
+   padding-right: 50px;
+}
+
+/*   Price Table CSS */
+
+#pricing-table{
+    margin-left: 200px;
+    margin-right: 200px;   
+}
+
+.price-header{
+    text-align: center;
+     font-weight: bold;
+}
+
+.price-row{
+    text-align: center;
+}
+
+.price-title{
+    color: black;
+    font-weight: bold;
+}
+
+.price{
+    color:gray;
+}
+
+/*   Project Content CSS */
+
+#projects{
+    margin-left: 14px;
+    margin-right: 15px;
+}
+
+.project-content{
+    color: grey;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.project-header{
+    text-align: center;
+    font-weight: bold;
+}
+
+.img-project{
+    height: 380px;
+    width: 336px;
+}
+
+.bor{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+    transition: all 0.5s ease;
+}
+
+.bor:hover{
+    background-color:rgb(255, 227, 103);
+    transform: scale(1.05);
+}
+
+.project-description {
+    padding: 25px;
+}
+
+.launch-btn{
+    height: 44px;
+    width: 170px;
+    background-color: white;
+    border: none;
+    font-size: 13px
+}
+
+.launch-btn:hover{
+    background-color: purple;
+    color:white;
+    cursor: pointer;
+}
+
+/* Slide Show CSS */
+
+.container-slider {
+    position: relative;
+}
+ 
+.my_slide {
+    display: none;
+  
+  }
+
+.slide-img{
+    text-align: center;
+    width:101%;
+}
+  
+.cursor {
+    cursor: pointer;
+}
+  
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: 5%;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/*  Zippy-life  CSS */
+
+#zippy-life{
+    margin-left: 260px;
+    margin-right: 260px;
+    margin-top: 30px;
+}
+
+.zippy-life-header{
+    font-weight: bold;
+    text-align: center;
+}
+
+#bg-zippy-life{
+    background-color: rgb(240, 240, 240);
+}
+
+/*  Zippy blog CSS */
+
+#blog{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.zippy-blog{
+    font-weight: bold;
+}
+
+.blog-padding{
+    padding: 50px;
+}
+
+.blog-title{
+    font-weight: bold;
+}
+
+.blog-date{
+    color: gray;
+}
+.blog-img{
+    height:100px;
+    width:200px;
+}
+.read-more-btn{
+    font-size: 12px;
+    height: 35px;
+    width: 130px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(224, 215, 215);
+}
+
+.read-more-btn:hover{
+    background-color: rgb(255, 227, 103);
+}
+
+/*  Contact us CSS */
+
+#contact{
+    margin-left: 0px;
+    margin-right:0px;
+}
+
+.map-img{
+    height:33rem;
+    width:43rem;
+    margin-left: -7.1rem;
+    margin-right:0px;
+}
+
+.form-area{
+    background-color: rgb(255, 227, 103);
+    margin-left: 0.1rem;
+    margin-right: -7.2rem;
+    padding: 4px 30px;
+}
+
+.form-input{
+    width: 18rem;
+    height: 2.3rem;
+    outline: none;
+    border:none;
+}
+
+.form-label{
+    font-size: 13px;
+}
+
+textarea{
+    border:none;
+}
+
+.send-btn{
+    height: 37px;
+    width: 18.4rem;
+    text-align: center;
+    color: white;
+    background-color: purple;
+    margin-bottom: 30px;
+    border: none;
+    font-size: 14px;
+
+}
+
+/*  Footer CSS */
+
+#footer{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.footer-padding{
+    padding: 45px 80px;
+    align-items: center;
+    font-size: 15px;
+}
+.address-title{
+    font-weight: bold;
+}
+
+.social-icon{
+    font-size: 20px;
+    padding: 12px;
+    color: #423a3a;
+}
+
+/*  Newsletter CSS */
+
+#signup::before{
+    content: "";
+    background:url('bridge.jpg') no-repeat center center/cover;
+    position:absolute;
+    height: 37%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.signup-content{
+    text-align: center;
+}
+
+.newsletter-title{
+    color: white;
+    font-weight: bold;
+}
+
+.signup-input{
+    height: 37px;
+    width: 24rem;
+    outline: none;
+    border:none;
+    padding: 10px;
+}
+
+.signup-btn-1{
+    height: 37px;
+    width: 109px;
+    color: white;
+    background-color: purple;
+    font-size: 12px;
+    border: none;
+}
+
+.signup-btn-2{
+    float: right;
+    margin-right: 26.6rem;
+    height: 40px;
+    width: 109px;
+    color: white;
+    background-color: purple;
+    font-size: 12px;
+    border: none;
+}
+
+.signup-btn:hover{
+    background-color: rgb(255, 227, 103);
+    color:black;
+}
+
+/*   Zippy Team CSS   */
+
+#zippy-team{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.image{
+    position: relative;
+}
+
+.person-img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 8rem;
+}
+
+.img-overlay{
+    width: 49%;
+    height: 100%;
+    top: 0;
+    left: 74px;
+    position:absolute;
+    background-color: rgb(133, 8, 133,0.4);
+    border-radius: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.img-overlay:hover{
+    opacity: 1;
+}
+
+.social-icon-overlay{
+    color: rgb(221, 210, 210);
+    padding: 12px;
+    font-size: 18px;
+}
+
+.zippy-team-header{
+    font-weight: bold;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 5px;
+}
+
+.position{
+    color:gray;
+    font-size: 14px;
+}
+
+.wrapper{
+    height: 19rem;
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+    width:2px;
+}
+
+.wrapper .item{
+    min-width: 20rem;
+    height: 15rem;
+    margin-right: 4rem;
+}
+
+/*  Project Video  */
+
+.project-video{
+    width: 23rem;
+    height: 17rem;
+}
+
+.video-project-header{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.video-section{
+    background-color: #650d65
+}
+
+.package-details{
+    line-height: 13px;
+}
+
+.person-img:hover{
+    cursor: pointer;
+    color: rgb(119, 38, 119,0.9);
+}
